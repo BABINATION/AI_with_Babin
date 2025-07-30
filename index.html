@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sessions with Babin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-menu-container">
+        <div class="menu-left-column">
+            <div class="main-heading-wrapper">
+                <h1 class="neon-title">AI</h1>
+                <p class="subtitle">with <span id="babin-name-typewriter" class="babin-name"></span><span class="typing-cursor"></span></p>
+            </div>
+            <div class="description">
+                <p>Hi, I’m Babin and this is my little corner of the internet where I share what I’m learning about the world of AI.</p>
+                <p>I’m not a coder or an expert, just someone curious about what’s possible and excited to help others explore too.</p>
+                <p>This space is for beginners, dreamers, and curious minds to learn, play, and grow together.</p>
+                <p>Let’s explore AI one step at a time.</p>
+                <p><strong>Let’s keep learning. Let’s keep sharing.</strong></p>
+            </div>
+        </div>
+        <div class="menu-right-column">
+            <div class="session-categories">
+                <button class="category-btn" data-slideshow="intro">Intro / Basics</button>
+                <button class="category-btn" data-slideshow="terminologies">Common AI Terminologies</button>
+                <button class="category-btn" data-slideshow="vibecoding">Vibe Coding</button>
+                <button class="category-btn" disabled>Git/ Github</button>
+                <button class="category-btn" disabled>Project Development Framework</button>
+                <button class="category-btn" disabled>Website Development</button>
+                <button class="category-btn" disabled>App/ Software Development</button>
+                <button class="category-btn" data-slideshow="practical">Practical Use Cases</button>
+                <button class="category-btn" disabled>AI Agents and Automation</button>
+                <button class="category-btn" disabled>Useful AI tools</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="intro-slideshow" class="slideshow-container">
+        <div class="slideshow-nav">
+            <div class="slide-counter"></div>
+            <div class="nav-dots"></div>
+        </div>
+        <button class="close-slideshow-btn">&times;</button>
+        <button class="nav-button prev" aria-label="Previous Slide"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+        <button class="nav-button next" aria-label="Next Slide"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+
+        <div class="slide" data-theme="light">
+            <div class="container light-theme-content">
+                <h1 class="heading animatable">How Does AI Work?</h1>
+                <p class="description animatable">AI works by learning from data and improving over time. It involves <span class="highlight">data collection</span>, <span class="highlight">training models</span>, <span class="highlight">making predictions</span>, and <span class="highlight">continuous improvement</span>.</p>
+            </div>
+        </div>
+        <div class="slide" data-theme="dark">
+            <div class="container dark-theme-content">
+                <h1 class="heading animatable">Your AI Experience &amp; Wildest Possibilities</h1>
+                <div class="questions-container">
+                    <div class="question-card animatable">What’s the best thing you’ve used AI for so far?</div>
+                    <div class="question-card animatable">What’s the wildest thing you know AI can do today?</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container uses-ai-slide">
+                <h1 class="main-title animatable">Uses of AI — From Everyday to Advanced</h1>
+                <div class="content-grid">
+                    <div class="content-card animatable"><h2>Everyday &amp; Basic Use Cases</h2><ul><li><strong>Email:</strong> Spam detection, smart replies</li><li><strong>Smartphones:</strong> Voice assistants, predictive text</li><li><strong>Social Media:</strong> Content recommendations, filters</li><li><strong>E-commerce:</strong> Personalized product suggestions</li></ul></div>
+                    <div class="content-card animatable"><h2>Work &amp; Productivity</h2><ul><li><strong>AI Chatbots</strong> for 24/7 customer service</li><li><strong>AI Agents</strong> for scheduling, summarizing, research</li><li><strong>Copywriting tools</strong> for drafting emails &amp; content</li><li><strong>Workflow automation</strong> for approvals &amp; responders</li></ul></div>
+                    <div class="content-card animatable"><h2>Creative &amp; Generative AI</h2><ul><li><strong>Text generation</strong> for blogs, stories, reports</li><li><strong>Image generation</strong> for artworks, mockups, ideas</li><li><strong>Video generation</strong> from scripts or prompts</li><li><strong>Music generation</strong> and remixing in various styles</li></ul></div>
+                    <div class="content-card animatable"><h2>Advanced &amp; Industry-Specific</h2><ul><li><strong>Healthcare:</strong> Disease diagnosis, drug discovery</li><li><strong>Finance:</strong> Risk analysis and fraud detection</li><li><strong>Autonomous systems:</strong> Self-driving cars, drones</li><li><strong>Code assistance</strong> for writing &amp; refactoring code</li></ul></div>
+                </div>
+                <div class="quote-box animatable"><p>"From answering emails to generating entire movies, AI is scaling how we work, think, and create. This is not just about speed, it is about multiplying human potential."</p></div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container future-ai-slide">
+                <h1 class="main-title animatable">The Future of AI</h1>
+                <div class="content-layout">
+                    <div class="column-left">
+                        <div class="future-list-item animatable"><strong>Smarter AI Agents</strong><span>AI that understands context, goals, and emotions</span></div>
+                        <div class="future-list-item animatable"><strong>Autonomous Creativity</strong><span>Art, music, and film co-created by machines</span></div>
+                        <div class="future-list-item animatable"><strong>Personalized Education</strong><span>Tutors that adapt to every student in real time</span></div>
+                    </div>
+                    <div class="column-right">
+                        <div class="future-list-item animatable"><strong>Advanced Healthcare</strong><span>Early detection, robotic surgeries, and drug modeling</span></div>
+                        <div class="future-list-item animatable"><strong>AI Co-Workers</strong><span>Assistants managing schedules, meetings, and tasks</span></div>
+                        <div class="future-list-item animatable"><strong>Digital Twins &amp; Simulations</strong><span>Virtual models of cities, people, and ecosystems</span></div>
+                    </div>
+                </div>
+                <p class="footer-quote animatable">"The future belongs to those who learn with machines, not compete against them."</p>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container phases-slide">
+                <h1 class="main-title animatable">Phases of AI Understanding</h1>
+                <div class="phases-layout animatable">
+                    <div class="phases-nav">
+                        <div class="phase-nav-item" data-phase="unaware">Unaware</div>
+                        <div class="phase-nav-item" data-phase="curious">Curious</div>
+                        <div class="phase-nav-item" data-phase="active">Active User</div>
+                        <div class="phase-nav-item" data-phase="integrator">Integrator</div>
+                        <div class="phase-nav-item" data-phase="innovator">Innovator</div>
+                    </div>
+                    <div class="phase-description-display">
+                        <h3 id="phase-title"></h3>
+                        <p id="phase-description"></p>
+                    </div>
+                </div>
+                <p class="phases-footer-quote animatable">Where are you on this journey?</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="practical-slideshow" class="slideshow-container">
+        <div class="slideshow-nav">
+            <div class="slide-counter"></div>
+            <div class="nav-dots"></div>
+        </div>
+        <button class="close-slideshow-btn">&times;</button>
+        <button class="nav-button prev" aria-label="Previous Slide"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+        <button class="nav-button next" aria-label="Next Slide"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">Practical Use Cases</h1>
+                <div class="use-cases-container">
+                    <a href="https://babination.github.io/NepalSalaryTaxCalc/" target="_blank" class="glass-slab animatable">
+                        <h2>Nepal Salary Tax Calculation</h2>
+                        <p>An interactive tool to calculate salary tax based on Nepalese regulations.</p>
+                    </a>
+                    <a href="https://babination.github.io/SoulSprint/" target="_blank" class="glass-slab animatable">
+                        <h2>Board Game - Soul Sprint</h2>
+                        <p>A digital board game concept with unique mechanics.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terminologies-slideshow" class="slideshow-container">
+        <div class="slideshow-nav">
+             <div class="slide-counter"></div>
+             <div class="nav-dots"></div>
+        </div>
+        <button class="close-slideshow-btn">&times;</button>
+        <div class="slide active" data-theme="gradient">
+            <h1 class="main-title animatable" style="padding-top: 2rem; margin-bottom: 2rem;">Common AI Terminologies</h1>
+            <div class="container" style="padding-top: 0;">
+                <div class="terminologies-layout animatable">
+                    <div class="terms-nav">
+                        <div class="term-nav-item" data-term="agentic">Agentic AI</div>
+                        <div class="term-nav-item" data-term="api">API</div>
+                        <div class="term-nav-item" data-term="genai">Gen AI</div>
+                        <div class="term-nav-item" data-term="gpt">GPT</div>
+                        <div class="term-nav-item" data-term="json">JSON</div>
+                        <div class="term-nav-item" data-term="llm">LLM</div>
+                        <div class="term-nav-item" data-term="ml">ML</div>
+                        <div class="term-nav-item" data-term="nlp">NLP</div>
+                        <div class="term-nav-item" data-term="neural">Neural Networks</div>
+                        <div class="term-nav-item" data-term="ollama">Ollama</div>
+                        <div class="term-nav-item" data-term="opensource">Open Source</div>
+                        <div class="term-nav-item" data-term="rag">RAG</div>
+                        <div class="term-nav-item" data-term="saas">SaaS</div>
+                        <div class="term-nav-item" data-term="schema">Schema</div>
+                        <div class="term-nav-item" data-term="singularity">Singularity</div>
+                        <div class="term-nav-item" data-term="training">Training Data</div>
+                    </div>
+                    <div class="term-description-display">
+                        <h3 id="term-title"></h3>
+                        <p id="term-fullname" class="term-fullname-display"></p>
+                        <p id="term-main-def" class="term-main-def"></p>
+                        <p id="term-analogy" class="term-analogy"></p>
+                        <ul id="term-examples" class="term-examples-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="vibecoding-slideshow" class="slideshow-container">
+        <div class="slideshow-nav">
+             <div class="slide-counter"></div>
+             <div class="nav-dots"></div>
+        </div>
+        <button class="close-slideshow-btn">&times;</button>
+        <button class="nav-button prev" aria-label="Previous Slide"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+        <button class="nav-button next" aria-label="Next Slide"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+
+        <div class="slide" data-theme="gradient">
+            <div class="container vibe-coding-intro">
+                <h1 class="main-title animatable">What is Vibe Coding?</h1>
+                <p class="animatable">
+                    Vibe Coding is a modern approach to development that focuses on describing the desired outcome or 'vibe' to an AI, which then generates the code. It's less about writing every line of code manually and more about guiding an AI partner to build your vision. This allows creators, even those without a deep technical background, to bring ideas to life quickly.
+                </p>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">⚙️ How Vibe Coding Works (Technically)</h1>
+                <div class="vibe-works-list animatable">
+                    <div class="vibe-works-item">
+                        <h3>Project First, Plan Later:</h3>
+                        <p>You start with an idea or interface and jump directly into code—skipping or minimizing wireframes/spec docs.</p>
+                    </div>
+                    <div class="vibe-works-item">
+                        <h3>Rapid Tinkering:</h3>
+                        <p>Use tools like browser dev tools, hot reload, or live previews to tweak UI and functionality on the fly.</p>
+                    </div>
+                    <div class="vibe-works-item">
+                        <h3>Layered Prototyping:</h3>
+                        <p>Begin with quick, functional code. Polish styling, UX, and structure in later passes. Refactor and modularize only after proof of concept feels right.</p>
+                    </div>
+                    <div class="vibe-works-item">
+                        <h3>Minimal Boilerplate:</h3>
+                        <p>Focus on lightweight stacks (HTML/CSS/JS, React + Vite, or Python Flask) to avoid setup friction.</p>
+                    </div>
+                    <div class="vibe-works-item">
+                        <h3>Instant Feedback Loop:</h3>
+                        <p>Immediate testing + visual feedback (live server, console logs, debug overlays) fuels continuous iteration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">Pros and Cons of Vibe Coding</h1>
+                <div class="pros-cons-container animatable">
+                    <div class="pros-column">
+                        <h2>✅ Pros (Technical)</h2>
+                        <ul>
+                            <li><strong>Fast Prototyping:</strong> Skip setup rituals and jump right into usable code.</li>
+                            <li><strong>Creative Freedom:</strong> Enables expressive UI/UX experimentation without rigid framework constraints.</li>
+                            <li><strong>Improved Intuition:</strong> Reinforces understanding of how changes impact design and logic in real time.</li>
+                            <li><strong>Engaging for Learners:</strong> Encourages trial-and-error learning and deeper curiosity.</li>
+                            <li><strong>Low Barrier to Entry:</strong> Great for solo developers, hackathons, or internal tooling.</li>
+                        </ul>
+                    </div>
+                    <div class="cons-column">
+                        <h2>⚠️ Cons (Technical)</h2>
+                        <ul>
+                            <li><strong>Lack of Scalability:</strong> Quick hacks don’t always translate to maintainable codebases.</li>
+                            <li><strong>Code Smell Risk:</strong> May result in unoptimized, repetitive, or tightly coupled code.</li>
+                            <li><strong>Testing Neglected:</strong> Often lacks test coverage or proper version control practices early on.</li>
+                            <li><strong>Documentation Gaps:</strong> Little to no docs, making handoff or future updates difficult.</li>
+                            <li><strong>Can Be Tool-Dependent:</strong> Relies on live preview setups, quick loaders, and UI libraries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+             <div class="container">
+                <h1 class="main-title animatable">Which AI Coding Tool is for you?</h1>
+                <div class="dev-chart-container animatable">
+                    <div class="dev-chart-header">
+                        <span>Non-Technical</span>
+                        <span>Technical</span>
+                    </div>
+                    <div class="dev-chart-axis"></div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Lovable</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 40%; margin-left: 0;"></div></div>
+                    </div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Bolt</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 50%; margin-left: 5%;"></div></div>
+                    </div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Tempolabs</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 60%; margin-left: 10%;"></div></div>
+                    </div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Cursor</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 45%; margin-left: 55%;"></div></div>
+                    </div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Windsurf</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 40%; margin-left: 60%;"></div></div>
+                    </div>
+                    <div class="dev-chart-row">
+                        <div class="dev-chart-label">Onlook</div>
+                        <div class="dev-chart-bar-wrapper"><div class="dev-chart-bar" style="width: 25%; margin-left: 75%;"></div></div>
+                    </div>
+                </div>
+                 <div class="dev-table-container animatable">
+                    <div class="dev-table">
+                        <div class="dev-table-cell dev-table-header">Codegen + Deployment</div>
+                        <div class="dev-table-cell dev-table-header">Codegen + Code Editor</div>
+                        <div class="dev-table-cell dev-table-header">Codegen + Code Editor + Figma</div>
+                        <div class="dev-table-cell dev-table-header">Codegen + Deployment + Code Editor</div>
+                        <div class="dev-table-cell">Lovable<br>Bolt<br>Replit<br>v0</div>
+                        <div class="dev-table-cell">Replit<br>Bolt<br>v0<br>Windsurf<br>Cursor</div>
+                        <div class="dev-table-cell">Tempolabs</div>
+                        <div class="dev-table-cell">Replit<br>Bolt<br>v0</div>
+                    </div>
+                </div>
+                <div class="recommendation-section animatable">
+                    <p><strong>If you are non-technical:</strong> Lovable, Bolt</p>
+                    <p><strong>If you are technical and you like to code:</strong> Windsurf / Cursor</p>
+                    <p><strong>If you are technical and don't want to code but want control:</strong> Replit, Tempo, Bolt</p>
+                    <p><strong>If you are non-technical but are product minded and want control:</strong> Tempo</p>
+                    <p><em>At the end of the day, anyone can use anything (even the non-technical can use Cursor).</em></p>
+                </div>
+                <p class="reference-link animatable">Reference: <a href="https://www.youtube.com/watch?v=Ojk51mNOUow" target="_blank">Greg Isenberg</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

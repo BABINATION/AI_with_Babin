@@ -1,5 +1,5 @@
-/* CSS Variables for easy theme management */
-:root {
+  /* CSS Variables for easy theme management */
+  :root {
     --background-color: #000000;
     --bg-gradient-start: #0a0a10;
     --bg-gradient-end: #1a1a2e;
@@ -59,7 +59,7 @@ body.dark-theme {
     padding: 2rem;
     gap: 4rem;
     flex-wrap: wrap; 
-    overflow-y: auto; /* FIX: Allow homepage to scroll if content is too tall */
+    overflow-y: auto;
 }
 
 .main-menu-container.hidden {
@@ -324,6 +324,27 @@ body.dark-theme {
 .recommendation-section p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; }
 .recommendation-section strong { color: var(--accent-color); }
 
+/* --- Project Framework Slide --- */
+.problem-statement-container { display: flex; gap: 2rem; justify-content: center; width: 100%; }
+.problem-card { background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 16px; flex: 1; max-width: 300px; text-align: center; }
+.card-number { font-size: 3rem; font-weight: 700; color: var(--accent-color); margin-bottom: 1rem; }
+.problem-card p { font-size: 1.5rem; line-height: 1.6; }
+.framework-list { text-align: left; max-width: 800px; margin: 0 auto 3rem auto; }
+.framework-item { background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
+.framework-item h3 { font-size: 1.5rem; color: var(--accent-color); }
+.prd-note-container { display: flex; align-items: center; justify-content: center; gap: 2rem; background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 16px; }
+.prd-note-steps { display: flex; flex-direction: column; gap: 0.5rem; text-align: right; font-size: 1.1rem; }
+.prd-note-arrow { font-size: 3rem; color: var(--neon-color); }
+.prd-note-goal { font-size: 1.3rem; font-weight: 700; color: var(--accent-color); text-align: left; max-width: 250px; }
+.product-basics-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; width: 100%; max-width: 1000px; }
+.product-branch { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 2.5rem; border: 1px solid rgba(255, 255, 255, 0.15); text-align: left; }
+.product-branch h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem; }
+.product-branch p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 1rem; }
+.product-branch ul { list-style: none; padding-left: 0; }
+.product-branch li { margin-bottom: 0.5rem; font-size: 1.1rem; position: relative; padding-left: 20px; }
+.product-branch li::before { content: '✓'; color: var(--neon-color); position: absolute; left: 0; }
+
+
 /* --- Slideshow Navigation UI --- */
 .slideshow-nav { position: fixed; top: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 1001; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
 .slide-counter { font-size: 0.9rem; color: var(--text-color); opacity: 0.7; }
@@ -361,10 +382,13 @@ body.light-theme .nav-dot.active { background-color: #007BFF; box-shadow: 0 0 10
     .menu-left-column .neon-title { font-size: 25vw; }
     .menu-left-column .subtitle { font-size: 2rem; margin-top: 0; }
     .slide { padding: 4rem 5rem; }
-    .uses-ai-slide .content-grid, .future-ai-slide .content-layout, .phases-layout, .terminologies-layout, .pros-cons-container { grid-template-columns: 1fr; gap: 2rem; }
+    .uses-ai-slide .content-grid, .future-ai-slide .content-layout, .phases-layout, .terminologies-layout, .pros-cons-container, .product-basics-layout { grid-template-columns: 1fr; gap: 2rem; }
     .phases-nav { padding-left: 0; flex-direction: row; justify-content: center; flex-wrap: wrap; }
     .phases-nav::before, .phase-nav-item.active::before { display: none; }
     .dev-table-container { overflow-x: auto; }
+    .problem-statement-container { flex-direction: column; }
+    .prd-note-container { flex-direction: column; }
+    .prd-note-arrow svg { transform: rotate(90deg); }
 }
 @media (max-width: 768px) {
     .slide { padding: 5rem 1rem; }

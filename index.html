@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Sessions with Babin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    ...
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Analytics -->
@@ -40,7 +39,7 @@
                 <button class="category-btn" data-slideshow="terminologies">Common AI Terminologies</button>
                 <button class="category-btn" data-slideshow="vibecoding">Vibe Coding</button>
                 <button class="category-btn" disabled>Git/ Github</button>
-                <button class="category-btn" disabled>Project Development Framework</button>
+                <button class="category-btn" data-slideshow="projectframework">Project Development Framework</button>
                 <button class="category-btn" disabled>Website Development</button>
                 <button class="category-btn" disabled>App/ Software Development</button>
                 <button class="category-btn" data-slideshow="practical">Practical Use Cases</button>
@@ -145,6 +144,14 @@
                     <a href="https://babination.github.io/SoulSprint/" target="_blank" class="glass-slab animatable">
                         <h2>Board Game - Soul Sprint</h2>
                         <p>A digital board game concept with unique mechanics.</p>
+                    </a>
+                    <a href="https://lunch-box-frontend-vert.vercel.app/" target="_blank" class="glass-slab animatable">
+                        <h2>Lunch Tracker</h2>
+                        <p>A web-based tool to keep track of team lunch and split bills.</p>
+                    </a>
+                    <a href="https://babination.github.io/Stamp_Duty_Calc_Pro/" target="_blank" class="glass-slab animatable">
+                        <h2>Stamp Duty Calculator Pro</h2>
+                        <p>A calculator for stamp duty in Australia, including schemes and concessions.</p>
                     </a>
                 </div>
             </div>
@@ -319,6 +326,88 @@
             </div>
         </div>
     </div>
+
+    <div id="projectframework-slideshow" class="slideshow-container">
+        <div class="slideshow-nav">
+             <div class="slide-counter"></div>
+             <div class="nav-dots"></div>
+        </div>
+        <button class="close-slideshow-btn">&times;</button>
+        <button class="nav-button prev" aria-label="Previous Slide"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+        <button class="nav-button next" aria-label="Next Slide"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></button>
+
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">Understanding the Core Problem</h1>
+                <div class="problem-statement-container animatable">
+                    <div class="problem-card">
+                        <div class="card-number">1</div>
+                        <p>What are we building?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="card-number">2</div>
+                        <p>For whom? Target Customer?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="card-number">3</div>
+                        <p>How will it be different from others?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">PRD (Product Requirement Document)</h1>
+                <div class="framework-list animatable">
+                     <div class="framework-item">
+                        <h3>Define each and every detail, feature, and functionality</h3>
+                    </div>
+                     <div class="framework-item">
+                        <h3>What platform are we creating the app for?</h3>
+                    </div>
+                     <div class="framework-item">
+                        <h3>Competitors? Inspiration?</h3>
+                    </div>
+                </div>
+                <div class="prd-note-container animatable">
+                    <div class="prd-note-steps">
+                        <div>Identify Market Gap</div>
+                        <div>Create a product plan</div>
+                        <div>Find Better Solutions</div>
+                        <div>Analyze Competition</div>
+                    </div>
+                    <div class="prd-note-arrow">
+                        <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10H90M90 10L80 1M90 10L80 19" stroke="var(--neon-color)" stroke-width="2"/></svg>
+                    </div>
+                    <div class="prd-note-goal">
+                        Use AI to fast track the building process!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-theme="gradient">
+            <div class="container">
+                <h1 class="main-title animatable">Basics of Product Building using AI</h1>
+                <div class="product-basics-layout animatable">
+                    <div class="product-branch">
+                        <h2>Front End</h2>
+                        <p>Everything you see on your screen: texts, buttons, everything visual. Coded with languages like JavaScript & CSS.</p>
+                    </div>
+                    <div class="product-branch">
+                        <h2>Back End</h2>
+                        <p>Everything that happens behind your website or app. The backbone of the application.</p>
+                        <ul>
+                            <li>Database</li>
+                            <li>Server</li>
+                            <li>Authentication</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="script.js" defer></script>

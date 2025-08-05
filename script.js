@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const mainMenu = document.querySelector('.main-menu-container');
